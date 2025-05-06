@@ -1,4 +1,7 @@
-JE TIENT A PRECISER QUE JE ME SUIS ARRETER ICI DANS MON STAGE , LE SITE A EVOLUER ARPES MON DEPART : VOUS POUVEZ REGARDER ICI : "https://kbis.tousatable.fr"
+> ⚠️ **DISCLAIMER IMPORTANT**  
+> Je tiens à préciser que je me suis **arrêté ici dans mon stage**.  
+> Le site a **évolué après mon départ**.  
+> 🔗 Vous pouvez consulter la version actuelle ici : [https://kbis.tousatable.fr](https://kbis.tousatable.fr)
 
 
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
