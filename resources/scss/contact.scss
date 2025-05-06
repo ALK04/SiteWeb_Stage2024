@@ -1,0 +1,135 @@
+
+/* Style pour les champs de formulaire */
+.contact {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    background: #fff;
+
+}
+
+.contact.nom,
+.contact.prenom,
+.contact.telephone {
+    width: calc(25% - 10px);
+    margin-right: 10px;
+    display: inline-block;
+    border: 1px solid #D9D9D9; /* Bordure grise */
+    transition: 0.1s ease;
+    z-index: 1111;
+    text-align: left;
+    margin-bottom: 3%;
+
+}
+
+/* Style pour le champ de l'email */
+.contact.email {
+    width: 75%;
+    border: 1px solid #D9D9D9; /* Bordure grise */
+    margin-bottom: 3%;
+}
+textarea{
+    resize: none;
+}
+
+/* Style pour le champ du message */
+.contact.message {
+    width: 80%;
+    resize: none;
+    border: 1px solid #D9D9D9; /* Bordure grise */
+
+}
+
+.contact::placeholder {
+    color: #6a6a6a;
+}
+.contact button{
+    position: static;
+    background-color: #324FBE;
+    color: #ffffff;
+    font-style: normal;
+    font-weight: bolder;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    width: 100%;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 13px;
+    transition: background-color 0.3s; /* Transition pour le changement de couleur */
+}
+
+.contact button:hover {
+    background-color: #1212ff;
+}
+.container2{
+    background-color: #fff ;
+    margin-top: 3%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 4%;
+    width: 55%;
+    padding: 1%;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+//image sur le formulaire de contact
+.image_taille2 {
+    width: 7%;
+    margin-right: 35%;
+    margin-left: 3%;
+    position: absolute;
+}
+
+@media screen and (max-width: 900px) {
+    .container2{
+        width: 75%;
+
+    }
+    .image_taille2 {
+        width: 12%;
+
+    }
+}
+@media screen and (max-width: 900px) {
+    .container2{
+        width: 85%;
+
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .container2{
+        width: 85%;
+
+    }
+    .image_taille2 {
+        display: none  ;
+
+    }
+    .contact.nom,
+    .contact.prenom,
+    .contact.telephone {
+        width: calc(32% - 10px);
+    }
+    .contact.email {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    .contact::placeholder {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 376px) {
+    .contact.nom,
+    .contact.prenom,
+    .contact.telephone {
+        width: 100%;
+    }
+}

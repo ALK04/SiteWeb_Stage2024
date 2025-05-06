@@ -1,0 +1,386 @@
+
+
+.recherche_kbis {
+    background-color: #fff;
+    padding: 20px;
+    width: 55%;
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    margin-top: 5%;
+    margin-bottom: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.recherche_kbis h2 {
+    color: #161616;
+    font-style: normal;
+    text-align: center;
+    font-family: 'Calibri', sans-serif;
+    font-size: medium;
+    margin-bottom: 1%;
+}
+
+.recherche_kbis input[type="text"] {
+    width: 55%;
+    padding: 13px;
+    margin: 5px 0;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    font-size: 13px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    outline: none;
+}
+
+.recherche_kbis button {
+    background-color: #324FBE;
+    color: #ffffff;
+    font-style: normal;
+    font-weight: bold;
+    padding: 13px 20px; /* Haut, Droite, Bas, Gauche */
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 13px;
+    transition: background-color 0.3s;
+    border-width: 1.2px;
+    border-style: solid;
+    border-color: lightgrey;
+    width: 58%;
+    margin: 10px 0;
+}
+
+.disabled-button {
+    cursor: not-allowed !important;
+}
+//message erreur pop-up.
+.swal-font {
+    font-family: 'Calibri', sans-serif; /* Remplacez 'Calibri' par votre choix de police */
+}
+
+.recherche_kbis button:hover {
+    background-color: #1212ff;
+}
+
+/*contenue pour le nombre d'entreprise*/
+.containerblanc {
+    background-color: #fff;
+    width: 100%;
+    padding-top: 3%;
+    box-shadow: 0 -4px 6px -4px rgba(0, 0, 0, 0.3),
+    0 4px 6px -4px rgba(0, 0, 0, 0.3);
+    padding-bottom: 5%;
+    margin-bottom: 3%;
+}
+
+.containerblanc h2 {
+    color: #161616;
+    font-style: normal;
+    text-align: center;
+    font-family: 'Calibri', sans-serif;
+    position: relative;
+}
+
+.containerblanc h2::after {
+    content: '';
+    display: block;
+    width: 20%;
+    height: 5px; /* Hauteur de la barre */
+    background-color: #324FBE; /* Couleur de la barre */
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 40%;
+    bottom: -15px; /* Ajuste la distance entre le texte et la barre */
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.containergris{
+    background-color: #fff;
+    width: 55%;
+    margin-top: 3%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex: auto;
+    border: 3px dashed #ddd;
+}
+.image_taille5{
+    width: 300px;
+    height: 300px;
+    margin-top: 0;
+}
+.containergris p {
+    text-align: justify;
+    margin-right: 13%;
+    margin-left: 5%;
+    font-family: 'Verdana', sans-serif;
+}
+
+/*page des tarif*/
+.containertarif {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 5%;
+    padding-top: 1%;
+    display: grid;
+    grid-template-rows: auto auto auto; /* Trois lignes de taille automatique */
+    grid-template-columns: auto auto 1fr; /* Deux colonnes de taille automatique et une colonne flexible */
+    gap: 0;
+    grid-template-areas:
+        "titre titre cubeblanc" /* Titre et paragraphe à gauche, cubeblanc à droite */
+        "paragraphe paragraphe cubeblanc" /* Titre et paragraphe à gauche, cubeblanc à droite */
+}
+
+.containertarif h1 {
+    color: #161616;
+    font-style: normal;
+    text-align: left;
+    font-family: 'Calibri', sans-serif;
+}
+
+.containertarif h2 {
+    display: none;
+    color: #161616;
+    font-style: normal;
+    text-align: left;
+    font-family: 'Calibri', sans-serif;
+    font-size: 24px;
+}
+.three h1 {
+    font-size: 28px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 1.5em;
+    padding-bottom: 15px;
+    position: relative;
+}
+.three h1:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 5px;
+    width: 55px;
+    background-color: #111;
+}
+.three h1:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 2px;
+    height: 1px;
+    width: 95%;
+    background-color: #333;
+}
+
+
+.containertarif p {
+    grid-area: paragraphe; /* Paragraphe dans la zone 'paragraphe' */
+    font-size: 18px;
+}
+
+.cubeblanc{
+    grid-area: cubeblanc; /* cubeblanc dans la zone 'cubeblanc' */
+    background-color: white;
+    width: 60%;
+    margin-right: 0;
+    margin-left: 40%;
+    border-radius: 20px;
+    height: 110%;
+    text-align: center;
+}
+.cubeblanc h4{
+    text-align: center;
+    font-style: normal;
+    font-family: 'Calibri', sans-serif;
+    font-size: 24px;
+}
+.cubeblanc p{
+    display: inline;
+    font-style: normal;
+    font-family: 'Calibri', sans-serif;
+    font-size: 26px;
+}
+
+.cubeblanc button {
+    text-align: center;
+    margin-top: 10%;
+    padding: 13px 45px 13px 45px; /* Haut, Droite, Bas, Gauche */
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    background-color: #324FBE;
+    font-family: 'Calibri', sans-serif;
+    font-size: 18px;
+}
+.button::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    width: 57.5px;
+    height: 16px;
+    border-radius: 3px;
+    scale: 0;
+    z-index: -1;
+    background-color: #000091;
+    transition: all 1.5s cubic-bezier(0.25, 0.1, 0.25, 1.0);
+}
+
+.button:hover::before {
+    scale: 3;
+}
+
+.button:hover {
+    color: #FFF;
+    scale: 1.0;
+    box-shadow: 0 0px 20px rgba(18, 18, 255,0.4);
+
+}
+
+.button:active {
+    scale: 1;
+}
+
+@media screen and (max-width: 1248px) {
+    .recherche_kbis {
+        width: 50%;
+    }
+    .containergris {
+        width: 65%;
+    }
+    .cubeblanc {
+        grid-area: cubeblanc;
+        background-color: white;
+        width: 130%;
+        margin-left: 2%;
+        margin-right: 30%;
+    }
+    .containertarif {
+        width: 80%;
+        margin: 0 auto; /* Utiliser margin: 0 auto; pour centrer le conteneur */
+        padding-bottom: 5%;
+        display: grid;
+        grid-template-rows: auto auto;
+        grid-template-columns: auto 1fr;
+        gap: 0;
+        grid-template-areas:
+        "titre titre cubeblanc"
+        "paragraphe paragraphe cubeblanc";
+    }
+    #tarif-section{
+        width: 90%;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 5%;
+    }
+}
+
+@media screen and (max-width: 1025px) {
+    .recherche_kbis {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .recherche_kbis {
+        width: 80%;
+    }
+    .containergris{
+        width: 85%;
+    }
+    .containertarif h2{
+        display: block;
+    }
+    .containertarif h1{
+        display: none  ;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .recherche_kbis {
+        width: 90%;
+
+    .recherche_kbis input[type="text"] {
+        width: 90%;
+        margin-left: 0;
+        margin-bottom: 5%;
+    }
+    }
+    .cubeblanc p{
+        font-size: 14px;
+        height: 70%;
+
+    }
+    .cubeblanc h4{
+        font-size: 16px;
+    }
+    .containertarif p {
+        grid-area: paragraphe; /* Paragraphe dans la zone 'paragraphe' */
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 520px) {
+
+    .recherche_kbis h2 {
+        font-size: 16px;
+    }
+    .recherche_kbis {
+        width: 85%;
+        text-align: center;
+    }
+    .image_taille5{
+        display: none;
+    }
+
+    .containergris p {
+        text-align: justify;
+        margin-top: 5%;
+        margin-right: 5%;
+        margin-left: 5%;
+
+    }
+    .cubeblanc p{
+        height: 70%;
+    }
+
+    .containergris{
+        border-radius: 20px;
+    }
+
+    .recherche_kbis input[type="text"] {
+        width: 90%;
+        margin-left: 0;
+        margin-bottom: 5%;
+    }
+    .cubeblanc button {
+        text-align: center;
+        margin-top: 3%;
+        padding: 13px 20px 13px 20px; /* Haut, Droite, Bas, Gauche */
+        border: none;
+        border-radius: 10px;
+        color: #fff;
+        background-color: #324FBE;
+        font-family: 'Calibri', sans-serif;
+        font-size: 18px;
+        transition: background-color 0.3s; /* Transition pour le changement de couleur */
+    }
+}
+
+@media screen and (max-width: 376px) {
+    .recherche_kbis input[type="text"] {
+        font-size: 11px;
+    }
+    .recherche_kbis button {
+        font-size: 11px;
+        width: 70%;
+
+    }
+    .cubeblanc{
+        height: 60%;
+    }
+}

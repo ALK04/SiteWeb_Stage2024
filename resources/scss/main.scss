@@ -1,0 +1,240 @@
+body {
+    margin: 0 auto;
+    width: 100%;
+}
+
+/* Image sur la page avant_paiement. */
+.image_taille4 {
+    width: 12.7%;
+    height: 40%; /* Par exemple, 50% de la hauteur du conteneur parent */
+    position: relative;
+    text-align: left;
+    background-color: #fff;
+    padding: 20px;
+    padding-top: 1%;
+    padding-bottom: 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 6%;
+    margin-bottom: 12%;
+    margin-right: 10%;
+}
+
+.container6 {
+    display: flex;
+    flex: 1 1 100px;
+}
+#form_message {
+    width: 100%;
+    height: 150px;
+    resize: vertical;
+}
+
+/* CSS pour la page avant_paiement. */
+.validation {
+
+    text-align: left;
+    background-color: #fff;
+    padding: 20px;
+    padding-top: 1%;
+    padding-bottom: 0;
+    width: 45%;
+    margin-right: 3%;
+    margin-left: 15%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 6%;
+    margin-bottom: 12%;
+}
+
+.validation .header-container {
+    display: flex;
+    align-items: center;
+}
+
+.validation h2 {
+    color: #324FBE;
+    font-weight: bold;
+    font-family: 'Calibri', sans-serif;
+    margin-left: 10px; /* Ajuster l'espace entre l'image et le texte */
+}
+
+.validation p {
+    color: #2B2D42;
+    font-weight: bold;
+    font-family: 'Calibri', sans-serif;
+}
+
+.validation button {
+    margin-left: 78%;
+    background-color: #324FBE;
+    color: #ffffff;
+    font-style: normal;
+    font-weight: bold;
+    padding: 16px 35px; /* Haut, Droite, Bas, Gauche */
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s; /* Transition pour le changement de couleur */
+    margin-bottom: 1%;
+}
+
+.validation button:hover {
+    background-color: #1212ff;
+}
+
+.inline {
+    display: inline;
+}
+
+.underline {
+    border-bottom: 7px solid #D9D9D9;
+    border-radius: 7px;
+    width: 60%;
+}
+
+
+@media screen and (max-width: 1225px) {
+    .validation button {
+        margin-left: 75%;
+        margin-bottom: 2%;
+    }
+    .image_taille3 {
+        left: 20%;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .validation button {
+        margin-left: 70%;
+    }
+    .image_taille3 {
+        display: none;
+    }
+    .validation {
+        padding-top: 2%;
+    }
+}
+@media screen and (max-width: 769px) {
+    .validation button {
+        margin-left: 0;
+        width: 100%;
+    }
+    .validation {
+        width: 65%;
+    }
+
+    .validation p {
+        font-size: 12px;
+    }
+
+    .image_taille4 {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 426px) {
+    .validation h2 {
+        font-size: 15px;
+    }
+    .validation p {
+        font-size: 11px;
+    }
+    .validation button {
+        padding: 14px 35px 14px 35px; /* Haut, Droite, Bas, Gauche */
+    }
+    .image_taille4 {
+        display: none;
+    }
+}
+@media screen and (max-width: 320px) {
+    .validation h2 {
+        font-size: 13px;
+    }
+    .validation p {
+        font-size: 10px;
+    }
+}
+
+
+
+.paiement::placeholder {
+    color: #aea397;
+    font-style: normal;
+    font-family: 'Calibri', sans-serif;
+    margin-left: 2%;
+}
+
+.paiement input {
+    margin-top: 2%;
+    border-radius: 5px;
+    border: 1px solid #949494;
+    width: 50%;
+    padding: 7px 0; /* Haut, Droite, Bas, Gauche */
+    margin-bottom: 2%;
+}
+
+.paiement button {
+    background-color: #324FBE;
+    color: #ffffff;
+    font-style: normal;
+    font-weight: bold;
+    width: 50%;
+    padding: 16px 0 16px 0; /* Haut, Droite, Bas, Gauche */
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s; /* Transition pour le changement de couleur */
+}
+
+.paiement button:hover {
+    background-color: #1212ff;
+}
+
+.paiement button.disabled-button {
+    background-color: grey;
+    cursor: not-allowed;
+}
+
+.container3 {
+    margin-top: 5%;
+    padding-top: 2%;
+    background-color: #fff;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10%;
+    padding-bottom: 5%;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+@media screen and (max-width: 769px) {
+    .container3 {
+        margin-top: 3%;
+        width: 80%;
+        margin-bottom: 30%;
+
+    }
+}
+
+@media screen and (max-width: 426px) {
+    .paiement input {
+        width: 70%;
+    }
+
+    .paiement button {
+        width: 70%;
+
+    }
+    .container3 {
+        margin-top: 10%;
+        margin-bottom: 50%;
+
+    }
+}
